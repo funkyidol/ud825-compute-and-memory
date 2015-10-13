@@ -14,62 +14,63 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android.mobileperf.compute" >
+<manifest package="com.example.android.mobileperf.compute"
+          xmlns:android="http://schemas.android.com/apk/res/android">
 
     <application
+        android:name=".CustomApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name="com.example.android.mobileperf.compute.MainActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
         <activity
             android:name=".CachingActivity"
             android:label="@string/title_activity_caching_exercise"
-            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity" >
+            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.mobileperf.compute.MainActivity" />
+                android:value="com.example.android.mobileperf.compute.MainActivity"/>
         </activity>
         <activity
             android:name="com.example.android.mobileperf.compute.BusyUIThreadActivity"
             android:label="@string/title_activity_busy_uithread"
-            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity"  >
+            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.mobileperf.compute.MainActivity" />
+                android:value="com.example.android.mobileperf.compute.MainActivity"/>
         </activity>
         <activity
             android:name="com.example.android.mobileperf.compute.DataStructuresActivity"
             android:label="@string/title_activity_data_structures"
-            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity" >
+            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.mobileperf.compute.MainActivity" />
+                android:value="com.example.android.mobileperf.compute.MainActivity"/>
         </activity>
         <activity
             android:name="com.example.android.mobileperf.compute.MemoryLeakActivity"
             android:label="@string/title_activity_memory_leak"
-            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity" >
+            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.mobileperf.compute.MainActivity" />
+                android:value="com.example.android.mobileperf.compute.MainActivity"/>
         </activity>
         <activity
             android:name="com.example.android.mobileperf.compute.MemoryChurnActivity"
             android:label="@string/title_activity_memory_churn"
-            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity" >
+            android:parentActivityName="com.example.android.mobileperf.compute.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.android.mobileperf.compute.MainActivity" />
+                android:value="com.example.android.mobileperf.compute.MainActivity"/>
         </activity>
     </application>
 
